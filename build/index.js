@@ -1,0 +1,8 @@
+'use strict';
+
+require('source-map-support/register');
+
+require('./greenBoxApi');
+
+require('./web/server');
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9pbmRleC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBOztBQUVBOztBQUNBIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICdzb3VyY2UtbWFwLXN1cHBvcnQvcmVnaXN0ZXInO1xuXG5pbXBvcnQgJy4vZ3JlZW5Cb3hBcGknO1xuaW1wb3J0ICcuL3dlYi9zZXJ2ZXInO1xuIl19
