@@ -31,22 +31,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/verifyIdentity', async (req, res) => {
-  const requestId = await GreenBoxAPI.send_request_to_id_at_idp(
-    idp_list: req.body.selectedIdps,
-    identifier: null,
-    /*{
-      namespace: ,
-      id:
-    },*/
-    request_message: null,
-    min_loa: {
-      min_ial: 0,
-      min_aal: 0
-    },
-    min_authentication_count: 1,
-    time_out: 1000*60*15 // 15 minutes 
-    //req.body.hideSourceRp
-  );
+  const requestId = await GreenBoxAPI.requestAuthen(req.body.selectedIdps, req.body.hideSourceRp);
   res.status(200).send({
     requestId,
   });

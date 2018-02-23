@@ -1,5 +1,5 @@
 {
-  "name": "verde-rp",
+  "name": "verde-rp-example",
   "version": "1.0.0",
   "description": "",
   "author": "WS3/Blockfint",
@@ -9,17 +9,14 @@
     "start": "npm run build && node ./build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@tahoe.mtviewsystem.com:digital-id/verde.git"
-  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
     "node-ipc": "^9.1.1",
     "socket.io": "^2.0.4",
-    "source-map-support": "^0.5.0"
+    "source-map-support": "^0.5.0",
+    "verde-ethereum": "git+https://github.com/verde-id/verde-ethereum.git#ad2eef596295c57e2895b2150103870110b528b0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

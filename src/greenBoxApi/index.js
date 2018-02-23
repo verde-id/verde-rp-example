@@ -26,14 +26,8 @@ const user = {
   namespace: 'cid'
 }
 
-//===================== API as in whitepaper =================================
-
-export const send_request_to_id_at_idp = async (input) => {
-  let { 
-    idp_list, identifier = user, request_message, min_loa,
-    min_authentication_count, time_out 
-  } = input;
-  const requestId = await busInterface.createIdpRequest(user, idps, false, request_message);
+export const requestAuthen = async (idps, hideSourceRpId) => {
+  const requestId = await busInterface.createIdpRequest(user, idps, hideSourceRpId);
   console.log("Request sent with request ID: " + requestId);
   return requestId;
 };

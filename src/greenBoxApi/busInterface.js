@@ -1,5 +1,5 @@
 import EventEmitter from 'events';
-import { rpInterface } from '../../../blockchain/build/lib/interface_lib';
+import { rpInterface } from 'verde-ethereum/build/lib/interface_lib';
 
 export const event = new EventEmitter();
 
@@ -30,11 +30,11 @@ function handleAuthenSuccess(requestId) {
   });
 }
 
-export const createIdpRequest = async (user, idps, hideSourceRpId = false, requestMessage) => {
+export const createIdpRequest = async (user, idps, hideSourceRpId = false) => {
   let userAddress = await rpInterface.findUserAddress(user.namespace,user.id);
-  let { request_type, body_message = 'Mockup request message' } = requestMessage;
   let requestId = await rpInterface.createRequest({
-    userAddress, requestText: body_message
+    userAddress: userAddress,
+    requestText: 'Mockup request details'
   }); 
 
   if(!requestId) {
