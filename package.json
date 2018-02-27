@@ -16,7 +16,7 @@
     "node-ipc": "^9.1.1",
     "socket.io": "^2.0.4",
     "source-map-support": "^0.5.0",
-    "verde-ethereum": "git+https://github.com/verde-id/verde-ethereum.git#2a921a30963e7b63edf2edbb7008215102997e4b"
+    "verde-ethereum": "git+https://github.com/verde-id/verde-ethereum.git#97793501c4994ba20ef1b460eb0838fa4b0fa43f"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
