@@ -1,7 +1,13 @@
-After npm install and run verde-ethereum
+Read this first https://github.com/verde-id/verde-doc/wiki
 
-Change src/index.js line 7
-to what index you want (0-9 from config file)
+Setup
+
+npm install
+
+Change src/index.js line 7 to select what account index 
+you want to use as RDP. (0-5 from config file).
+
+Run
 
 CONFIG_FILE=___directory to config file from verde-ethereum___ \
 SERVER_PORT=___web server port___ \
